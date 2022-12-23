@@ -9,7 +9,7 @@ const cssStyle = {};
 
 if (currDate >= 1 && currDate < 12) {
   greeting = "Good Morning";
-  cssStyle.color = "black";
+  cssStyle.color = "Orange";
 }
 else if (currDate >= 12 && currDate < 19) {
   greeting = "Good Afternoon";
@@ -23,5 +23,7 @@ else {
 
 ReactDOM.render(
   <>
-    <h1>Hello Subhadip, <span style={cssStyle}> {greeting}</span></h1>
+    <div>
+      <h1>Hello Subhadip, <span style={cssStyle}> {greeting}</span></h1>
+    </div>
   </>, document.getElementById("root"));
